@@ -1,0 +1,45 @@
+:root {
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Dark Theme */
+    --bg-dark: #000000;
+    --bg-glass-dark: rgba(20, 20, 20, 0.65);
+    --bg-dropdown-dark: #0D0D0D;
+    --border-dark: rgba(255, 255, 255, 0.15);
+    --shadow-dark: rgba(0, 0, 0, 0.3);
+    --font-color-dark: #EAEAEA;
+    --font-color-muted-dark: #9E9E9E;
+    
+    /* Light Theme */
+    --bg-light: #F0F2F5;
+    --bg-glass-light: rgba(255, 255, 255, 0.6);
+    --bg-dropdown-light: #FFFFFF;
+    --border-light: rgba(0, 0, 0, 0.1);
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --font-color-light: #1C1C1E;
+    --font-color-muted-light: #5A5A5D;
+
+    /* Universal Colors */
+    --accent-grad: linear-gradient(45deg, #FF416C, #FF4B2B);
+    --success: #28a745;
+    --danger: #dc3545;
+    --open: #ffc107;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    background-color: var(--bg-dark);
+    color: var(--font-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+    overflow: hidden;
+}
+
+body.light-mode {
+    background-color: var(--bg-light);
+    color: var(--font-color-light);
+}
